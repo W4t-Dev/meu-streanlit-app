@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 from typing import List
 
-WEB_APP_URL = st.secrets["google_appscript"]["https://script.google.com/macros/s/AKfycbxdaIN3yUkvpbOrjl8AzKCore8VFnYFFBb5qwPCvWbM3jb172f3mareHm6E74YRXELIHA/exec"]
+WEB_APP_URL = st.secrets["google_appscript"]["web_app_url"]
 
 def gerar_cartoes(qtd: int) -> List[str]:
     return [f"Relato #{i}" for i in range(1, qtd+1)]

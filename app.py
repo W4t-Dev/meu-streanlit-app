@@ -1,6 +1,7 @@
 
 import streamlit as st
 import requests
+from datetime import date
 from typing import List
 
 WEB_APP_URL = st.secrets["google_appscript"]["web_app_url"]
